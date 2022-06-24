@@ -8,6 +8,12 @@ const fragment = document.createDocumentFragment()
 
 let tareas = {}
 
+
+listaTarea.addEventListener('click', e => {
+    btnAccion(e)
+})
+
+
 formulario.addEventListener('submit', e =>{
     e.preventDefault()
 
@@ -59,7 +65,15 @@ const pintarTareas = () => {
 
     })
     listaTarea.appendChild(fragment) 
-    
+   
+}
+
+const btnAccion = e => {
+    //console.log(e.target.classList.contains('fa-circle-check'))
+    if (e.target.classList.contains('fa-circle-check')){
+        
+    }
+    e.stopPropagation()
 }
 
 
