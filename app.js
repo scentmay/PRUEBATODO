@@ -58,7 +58,7 @@ const pintarTareas = () => {
         fragment.appendChild(clone)
 
     })
-    listaTarea.appendChild(fragment)
+    listaTarea.appendChild(fragment) 
     
 }
 
